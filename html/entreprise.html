@@ -1,0 +1,341 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Company presentation</title>
+        <link rel="stylesheet" href="/css/common.css">
+        <link rel="stylesheet" href="/css/company.css">
+    </head>
+
+    <header id = "menu">
+        <div id="top-menu">
+            <img id="menuButton" src="/img/page_accueil/menu.png" onclick="menuButton('it worked')">
+            <img id="menuCross" src="/img/page_accueil/cross.png">
+        </div>
+        <nav id="navbar">
+            <div id="logoContainer">
+                <span id="logoTitle">NIRMALA</span>
+            </div>
+            <div class="menu">
+                <ul id="menuList">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="entreprise.html">Company</a></li>
+                    <li id="menuAchievements"><a href="" onmouseover="showAchievements()">Projects</a>
+                        <ul id="achievements">
+                            <li><a href="/html/projetsEcole.html">Academic</a></li>
+                            <li><a href="#">Company</a></li>
+                                <ul id="years">
+                                    <li><a href="/html/projetsEnt1.html">First year</a></li>
+                                    <li><a href="/html/projetEnt2.html">Second year</a></li>
+                                </ul>
+                        </ul>
+                    </li>
+                    <li><a href="veille.html">Technology watch</a></li>
+                    <li><a href="bilan.html">Report</a></li>
+                </ul>
+        </div>
+        </nav>
+    </header>
+
+    <body>
+        <div id="mobileContainer">
+            <div>
+                    <button class="btn" onclick="clickTab()">Company</button>
+                    <div id="company-identity">
+                        <h1>Bluegreen</h1>
+                        <img id = "comapny-logo" src = "/img/page_accueil/logo.jpg">
+                        <!-- A METTRE EN SPAN C EST PLUS FACILE A GERER EN CSS -->
+                        <p id = "prez">Cergy Saint-Christophe<br>Bought by Duval Group so Ugolf<br>Employee : 700 collaborators<br>Turnover : 21 235 967€ (in 2021)<br> Activity area : golf course management (47)<!--<br>DPO ?--></p>
+                    </div>
+
+                    <button class="btn" onclick="clickTab()">Organisational chart</button>             
+                    <div id="chart">
+                        <h4>IT Servcie's organisational chart</h4>
+                    <span id="chartTitle">Application software side</span>
+                    <div id="chartApplicationSofware">
+                        <div id="chartProfileV">
+                            <div class="container">
+                                <img id="emoji" src="/img/company/balle-de-golf-preview.png">
+                                <h3 id="v">VIRGINIE</h3>
+                            </div>
+                            <span id="profession">IT Manager</span>
+                        </div>
+                        <div id="chartProfileS">
+                            <div class="container">
+                                <img id="emoji" src="/img/company/balle-de-golf-preview.png">
+                                <h3 id="s">SEVERINE</h3>
+                            </div>
+                            <span id="profession">Admin Technicien and Software Support</span>
+                        </div>
+                        <div id="chartProfileN">
+                            <div class="container">
+                                <img id="emoji" src="/img/company/balle-de-golf-preview.png">
+                                <h3 id="n">NIRMALA</h3>
+                            </div>
+                            <span id="profession">Apprentice Administrative and Software Support</span>
+                        </div>
+                    </div>
+
+                    <span id="chartTitle">System and network side</span>
+                    <div id="chartSystem">
+                        <div id="chartProfileG">
+                            <div class="container">
+                                <img id="emoji" src="/img/company/balle-de-golf-preview.png">
+                                <h3 id="g">GAEL</h3>
+                            </div>
+                            <span id="profession">Systems and Network Engineering Manager</span>
+                        </div>
+                        <div id="chartProfileU">
+                            <div class="container">
+                                <h3 id="u">UGO</h3>
+                                <img id="emoji" src="/img/company/balle-de-golf-preview.png">
+                            </div>
+                            <span id="profession">User Support Technicien</span>
+                        </div>
+                        <div id="chartProfileT">
+                            <div class="container">
+                                <img id="emoji" src="/img/company/balle-de-golf-preview.png">
+                                <h3 id="t">THOMAS</h3>
+                            </div>
+                            <span id="profession">IT Service Apprentice</span>
+                        </div>
+                        <div id="chartProfileR">
+                            <div class="container">
+                                <img id="emoji" src="/img/company/balle-de-golf-preview.png">
+                                <h3 id="r">RONAN</h3>
+                            </div>
+                            <span id="profession">IT Service Apprentice</span>
+                        </div>
+                    </div>
+                </div>
+
+                    <button class="btn" onclick="clickTab()">Softwares used</button>
+                    <div id="softwares">
+                        <h1 id="titleSoftware">Softwares Used</h1>
+                        <div id="softwareContainer">
+                            <span class="subTitle">Résa à 0</span>
+                            <span></span>
+                            <img id="imgResa" src="/img/company/resa0.png">
+                        </div>
+
+                        <div id="softwareContainer">
+                            <span class="subTitle">CPS</span>
+                            <span></span>
+                            <img id="imgCPS" src="/img/company/cps.png">
+                        </div>
+
+                        <div id="softwareContainer">
+                            <span class="subTitle">Stadline (synchronised with CPS)</span>
+                            <img id="imgStadline" src="/img/company/stadline.png">
+                        </div>
+
+                        <div id="softwareContainer">
+                            <span class="subTitle">ClariLog</span>
+                            <img id="imgClarilog" src="/img/img.jpg">
+                        </div>
+
+                        <div id="softwareContainer">
+                            <span class="subTitle">Hub</span>
+                            <img id="imgHub" src="/img/company/hub.png">
+                        </div>
+
+                        <div id="softwareContainer">
+                            <span class="subTitle">Live Server</span>
+                            <img id="imgLiveServer" src="/img/company/serveurLive.png">
+                        </div>
+                    </div>
+
+                    <button class="btn" onclick="clickTab()">Missions</button>
+                    <div id = "contenu">
+                        <table>
+                            <caption>TASKS</caption>
+                            <tr> 
+                                <td>Setting game rules for every golf to sell the right subscription price</td> 
+                                <td>Custommer file's management : fusions, sales synchronization, handling old custommer files</td> 
+                                <td>Licences opening</td> 
+                            </tr>
+            
+                            <tr> 
+                                <td>Handle problems with custommer's subscitpion or their file in the "Hub" and "Réservation à 0"</td> 
+                                <td>Planning opening for 2 years to allows custommers to book a golf session</td> 
+                                <td>Perform test to detect beugs or to correct them (version pro and pre-prod)</td> 
+                            </tr>
+            
+                            <tr> 
+                                <td>Manage telephony for all the golfs and headquarter : distribution and attribution of SIM card</td> 
+                                <td>Setting options in CPS for each golf : cart, display of the planning, sales module (improve the display, add or remove old products, ...)...</td> 
+                                <td>Ticketing with Clarilog : for subscription, devices, matiriel, ...</td> 
+                            </tr>
+                        </table>
+                    </div>  
+
+                    <button class="btn" onclick="clickTab()">Bluegreen's network</button>
+                    <div id="network">
+                        <h1 id="networkTitle">Only available locally</h1>
+                        <h2>Network infrastructure</h2>
+                        <img class="networkImg" src="/img/company/Topologie réseau Bluegreen.png" alt="img">
+                        <img class="networkImg" src="/img/company/Topologie réseau.png" alt="img">
+                        <img class="networkImg" src="/img/company/Topologie sur site.png" alt="img">
+                    </div>
+            </div>
+        </div>
+        
+
+        <div id="container">
+            <h1>Bluegreen</h1>
+            <div id="buttonContainer">
+                <button class="btn">Company</button>
+                <button class="btn">Organisational chart</button>
+                <button class="btn">Softwares used</button>
+                <button class="btn">Missions</button>
+                <button class="btn">Bluegreen's network</button>
+            </div>
+
+            <div id="company-identity">
+                <img id = "comapny-logo" src = "/img/page_accueil/logo.jpg">
+                <!-- A METTRE EN SPAN C EST PLUS FACILE A GERER EN CSS -->
+                <p id = "prez">Cergy Saint-Christophe<br>Bought by Duval Group so Ugolf<br>Employee : 700 collaborators<br>Turnover : 21 235 967€ (in 2021)<br> Activity area : golf course management (47)<!--<br>DPO ?--></p>
+            </div>
+
+            <h4>IT Servcie's organisational chart</h4>
+            <div id="chart">
+            <span id="chartTitle">Application software side</span>
+            <div id="chartApplicationSofware">
+                <div id="chartProfileV">
+                    <div class="container">
+                        <img id="emoji" src="/img/company/balle-de-golf-preview.png">
+                        <h3 id="v">VIRGINIE</h3>
+                    </div>
+                    <span id="profession">IT Manager</span>
+                </div>
+                <div id="chartProfileS">
+                    <div class="container">
+                        <img id="emoji" src="/img/company/balle-de-golf-preview.png">
+                        <h3 id="s">SEVERINE</h3>
+                    </div>
+                    <span id="profession">Admin Technicien and Software Support</span>
+                </div>
+                <div id="chartProfileN">
+                    <div class="container">
+                        <img id="emoji" src="/img/company/balle-de-golf-preview.png">
+                        <h3 id="n">NIRMALA</h3>
+                    </div>
+                    <span id="profession">Apprentice Administrative and Software Support</span>
+                </div>
+            </div>
+        
+            <span id="chartTitle">System and network side</span>
+            <div id="chartSystem">
+                <div id="chartProfileG">
+                    <div class="container">
+                        <img id="emoji" src="/img/company/balle-de-golf-preview.png">
+                        <h3 id="g">GAEL</h3>
+                    </div>
+                    <span id="profession">Systems and Network Engineering Manager</span>
+                </div>
+                <div id="chartProfileU">
+                    <div class="container">
+                        <h3 id="u">UGO</h3>
+                        <img id="emoji" src="/img/company/balle-de-golf-preview.png">
+                    </div>
+                    <span id="profession">User Support Technicien</span>
+                </div>
+                <div id="chartProfileT">
+                    <div class="container">
+                        <img id="emoji" src="/img/company/balle-de-golf-preview.png">
+                        <h3 id="t">THOMAS</h3>
+                    </div>
+                    <span id="profession">IT Service Apprentice</span>
+                </div>
+                <div id="chartProfileR">
+                    <div class="container">
+                        <img id="emoji" src="/img/company/balle-de-golf-preview.png">
+                        <h3 id="r">RONAN</h3>
+                    </div>
+                    <span id="profession">IT Service Apprentice</span>
+                </div>
+            </div>
+        </div>
+
+        <h1 id="titleSoftware">Softwares Used</h1>
+        <div id="softwares">
+            <div id="softwareContainer">
+                <span>Résa à 0</span>
+                <span></span>
+                <img class="img" src="/img/company/resa0.png">
+            </div>
+
+            <div id="softwareContainer">
+                <span>CPS</span>
+                <span></span>
+                <img class="img" src="/img/company/cps.png">
+            </div>
+
+            <div id="softwareContainer">
+                <span id="stadlineTitle">Stadline (synchronised with CPS)</span>
+                <img class="img" src="/img/company/stadline.png">
+            </div>
+
+            <div id="softwareContainer">
+                <span>ClariLog</span>
+                <img class="img" src="/img/img.jpg">
+            </div>
+
+            <div id="softwareContainer">
+                <span>Hub</span>
+                <img class="img" src="/img/company/hub.png">
+            </div>
+
+            <div id="softwareContainer">
+                <span>Live Server</span>
+                <img class="img" src="/img/company/serveurLive.png">
+            </div>
+        </div>
+
+        <div id = "contenu">
+            <table>
+                <caption>TASKS</caption>
+                <tr> 
+                    <td>Setting game rules for every golf to sell the right subscription price</td> 
+                    <td>Custommer file's management : fusions, sales synchronization, handling old custommer files</td> 
+                    <td>Licences opening</td> 
+                </tr>
+
+                <tr> 
+                    <td>Handle problems with custommer's subscitpion or their file in the "Hub" and "Réservation à 0"</td> 
+                    <td>Planning opening for 2 years to allows custommers to book a golf session</td> 
+                    <td>Perform test to detect beugs or to correct them (version pro and pre-prod)</td> 
+                </tr>
+
+                <tr> 
+                    <td>Manage telephony for all the golfs and headquarter : distribution and attribution of SIM card</td> 
+                    <td>Setting options in CPS for each golf : cart, display of the planning, sales module (improve the display, add or remove old products, ...)...</td> 
+                    <td>Ticketing with Clarilog : for subscription, devices, matiriel, ...</td> 
+                </tr>
+            </table>
+        </div>    
+
+            <h2>Network infrastructure</h2>
+            <div id="network">
+                <img class="networkImg" src="/img/company/Topologie réseau Bluegreen.png" alt="img">
+                <img class="networkImg" src="/img/company/Topologie réseau.png" alt="img">
+                <img class="networkImg" src="/img/company/Topologie sur site.png" alt="img">
+            </div>
+    </div>
+        
+
+        <!--<span>A FAIRE : role dans l'entreprise, avec qui tu travaile, contexte (travaille en autonomie, suivi par le tuteur, vérification de chaques mission...), architecture du service informatique</span>-->
+
+    <footer>
+        <a href="https://www.linkedin.com/feed/">Linkedin</a>
+        <!--<img id="linkedin" src="/img/page_accueil/linkedin.png">-->
+
+        <a href="/html/mentionsLegales.html">Mentions Légales</a>
+    </footer>
+
+    <script src="/common.js"></script>
+    <script src="/js/accueil.js"></script>
+    <script src="/js/mobile.js"></script>
+    
+    </body>
+</html>

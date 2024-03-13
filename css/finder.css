@@ -1,0 +1,65 @@
+@media only screen and (min-width: 500px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .left {
+        width: 200px;
+        height: 400px;
+        background: rgb(119, 240, 244);
+    }
+    .left li {
+        list-style: none;
+        padding: 9px;
+        width: 70%;
+    }
+    .mainContent {
+        width: 700px;
+        height: 400px;
+        padding: 20px;
+        background: rgb(167, 190, 226);
+    }
+    .content:nth-child(4) p {
+        padding: 10px;
+        border: 2px double black;
+        border-radius: 10px;
+    }
+    .right {
+        width: 250px;
+        height: 400px;
+        background: rgb(119, 240, 244);
+    }
+    .right li {
+        list-style: none;
+        padding: 9px;
+        width: 75%;
+        text-align: center;
+        cursor: pointer;
+    }
+    .right .btn {
+        background: rgb(119, 240, 244);
+    }
+    .right .btn.active {
+        background: rgb(167, 190, 226);
+    }
+    .mainContent .content {
+        display: none;
+    }
+    .mainContent .content.active {
+        display: block;
+    }
+
+    /* SNIPPET OF CODE */
+    #codeImages {
+        width: 700px;
+        height: 400px;
+        overflow-y: scroll;
+        scrollbar-color: rebeccapurple green;
+        scrollbar-width: thin;
+    }
+    .code {
+        width: 800px;
+    }
+}

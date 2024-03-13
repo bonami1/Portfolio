@@ -1,0 +1,31 @@
+/*h2 {
+    font-size: 5rem;
+    text-align: center;
+}
+#title {
+    font-size: 5rem;
+    text-align: center;
+}
+#project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#projectsLogo1, #projectsLogo2, #projectsLogo3, #projectsLogo4, #projectsLogo5, #projectsLogo6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20%;
+}
+#img1, #img2, #img3, #img4, #img5, #img6 {
+    width: 35vh;
+    height: 35vh;
+    border-radius: 50%;
+}*/
+
+@media only screen and (min-width: 500px) {
+    
+    
+}

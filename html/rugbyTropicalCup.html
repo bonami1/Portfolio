@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rugby Trocical Cup Project</title>
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/rugbyTropicalCup.css">
+</head>
+<body>
+    <header id = "menu">
+        <div id="top-menu">
+            <img id="menuButton" src="/img/page_accueil/menu.png" onclick="menuButton('it worked')">
+            <img id="menuCross" src="/img/page_accueil/cross.png">
+        </div>
+        <nav id="navbar">
+            <div id="logoContainer">
+                <span id="logoTitle">NIRMALA</span>
+            </div>
+            <div class="menu">
+                <ul id="menuList">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="entreprise.html">Company</a></li>
+                    <li id="menuAchievements"><a href="" onmouseover="showAchievements()">Projects</a>
+                        <ul id="achievements">
+                            <li><a href="/html/projetsEcole.html">Academic</a></li>
+                            <li><a href="">Company</a></li>
+                                <ul id="years">
+                                    <li><a href="/html/projetsEnt1.html">First year</a></li>
+                                    <li><a href="/html/projetEnt2.html">Second year</a></li>
+                                </ul>
+                        </ul>
+                    </li>
+                    <li><a href="veille.html">Technology watch</a></li>
+                    <li><a href="bilan.html">Report</a></li>
+                </ul>
+        </div>
+        </nav>
+    </header>
+
+    <img id="logoRTC" src="/img/logo_projects/rugby.svg" alt="rugbyTropicalCupLogo">
+
+    <div class="container">
+        <div class="left">
+            <span>SOFT SKILLS</span>
+            <ul id="softSkills">
+                <li>Organisation</li>
+            </ul>
+        </div>
+
+        <div class="mainContent">
+            <div class="content">
+                <h2>Rugby Tropical Cup</h2>
+            <span>Duration : from 01/05/23 to ...</span> <br>
+            <div id="p">
+                <p id="purpose"><strong>Purpose :</strong>To allow a company to generate tickets with the teams' name, the stadium's location and the date, then scan their QR Code.</p>
+                <p id="languages"><strong>Programming languages :</strong>Django, Python, HTML / CSS<strong></p>
+                <p id="softwares">Softwares : </strong> : GitHub, Open Classroom, VS Code</p>
+                <p id="prez"><strong>Presentation :</strong>This web application allows to recover informations troughout an API about all the rugby matches. It was made with a website base that contained : 1 page for every stad's location, 1 page for every teams that will participate in the matches, and a page for the newsletter.</p>
+                <p id="fonctionalities"><strong>Fonctionalities : </strong>Consult every teams, stad's location, and informations about the Rugby soprt and Japan that will welcome all the teams. Generate tickets with its ID that will display the match informations. Scan the tickets' QR Code.</p>
+            </div>
+            </div>
+
+            <div class="content">
+                <div id="charterContainer">
+                    <span>Graphic charter</span>
+                    <p><h4>LOGO</h4>We made it very simple for the logo with a rugby ball to remind of the sport.</p>
+                    <p><h4>PROJET'S NAME</h4>Rugby Tropical Cup is the name we gave our project which is supposed to be the name of the event that will take place this summer with a total of 8 teams in 4 differents stadiums.</p>
+                    <p><h4>COLORS</h4>Our main colors are red for every rugby fan to remind of the passion, and orange which brings very joyful touch.</p>
+                    <p><h4>RESOURCES</h4>flagicons.lipis.dev : pour l'affichage des drapeaux</p>
+                </div>
+            </div>
+
+            <div class="content">
+                <span>Planning</span>
+                <div id="months"> <!--faire un tableau avec colonne = mois, ligne = div-->
+                    <span>April</span>
+                    <span>May</span>
+                    <span>June</span>
+                    <span>September</span>
+                    <span>October</span>
+                    <span>November</span>
+                </div>
+                <img id="planningRugby" src="/img/planning_rugby.png" alt="planning">
+            </div>
+
+            <div class="content">
+                <h3>DIAGRAM</h3>
+                <img src="/img/UMLdiag_rugby.png" alt="classDiagram">
+            </div>
+
+            <div class="content">
+                <table id="treatmentRegister">
+                    <caption>TREATMENT REGSITER</caption>
+                    <tr>
+                        <th>Treatment's description</th>
+                    </tr>
+                    <tr>
+                        <th>Treatment's name</th>
+                        <td>Newsletter management</td>
+                    </tr>
+                    <tr>
+                        <th>Treatment creation date</th>
+                        <td>26/11/2023</td>
+                    </tr>
+                    <tr>
+                        <th>Main purpose</th>
+                        <td>Newsletter management</td>
+                    </tr>
+                    <tr>
+                        <th>Categories of personal data involved</th>
+                        <th>Description</th>
+                        <th>Storage life</th>
+                    </tr>
+                    <tr>
+                        <td>Civil status, identity, identification data, images...</td>
+                        <td>Name, email adresse</td>
+                        <td>2 months after the newsletter's unsubscription</td>
+                    </tr>
+                    <tr>
+                        <th>Sensitive data</th>
+                        <td>None</td>
+                    </tr>
+                    <tr>
+                        <th>Categories of people involved</th>
+                        <th>Description</th>
+                        <th>Details</th>
+                    </tr>
+                    <tr>
+                        <td>First category</td>
+                        <th>Others</th>
+                        <td>User subscibed to the newsleter</td>
+                    </tr>
+                    <tr>
+                        <th>Safety precautions</th>
+                        <th>Precaution's type</th>
+                        <th>Details</th>
+                    </tr>
+                    <tr>
+                        <td>First precaution</td>
+                        <td>Data storage</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Second precaution</td>
+                        <td>User access control</td>
+                        <td>Admin access / User access</td>
+                    </tr>
+                </table> 
+            </div>
+
+            <div class="content">
+                <span>Snippet of code</span>
+                <div id="codeImages">
+                    <img class="code" src="/img/extrait_code/python_stad_team.png" alt="">
+                    <img class="code" src="/img/extrait_code/stad_display.png" alt="">
+                </div>
+            </div> 
+            
+            <div class="content">
+                <span>UNIT TEST</span>
+            </div>
+        </div>
+
+        <div class="right">
+            <h4>DOCUMENTS</h4>
+            <ul id="docs">
+                <li class="btn">Specifications</li>
+                <li class="btn">Graphic charter</li>
+                <li class="btn">Planning</li>
+                <li class="btn">Class diagram</li>
+                <li class="btn">Treatement resister</li>
+                <li class="btn">Snippet of code</li>
+                <li class="btn">Unit test</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <a href="https://www.linkedin.com/feed/">Linkedin</a>
+        <!--<img id="linkedin" alt="image" src="/img/page_accueil/linkedin.png">-->
+
+        <a href="/html/mentionsLegales.html">Mentions Légales</a>
+    </footer>
+    <script src="/realisation.js"></script>
+</body>
+</html>

@@ -1,0 +1,345 @@
+@media only screen and (max-width: 600px) {
+    html {
+        width: 120vh;
+    }
+    #container {
+        display: none;
+    }
+    #company-identity, #chart, #softwares, #contenu, #network {
+        display: none;
+    }
+    #buttonContainer {
+        width: 100%;
+    }
+    .btn {
+        font-size: 6rem;
+        padding: 30px;
+        width: 100%;
+        background: #7dcb8f;
+        border: 2px solid black;
+    }
+
+    /* COMMON */
+    #buttonContainer, #company-identity, #chartApplicationSofware, #chartSystem, #softwares, #softwareContainer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* PREZ */
+    #company-identity {
+        margin: 10% 3% 5% 3%;
+        font-size: 4rem;
+    }
+    #comapny-logo {
+        width: 70%;
+    }
+    #company-identity p {
+        text-align: center;
+    }
+    #prez {
+        font-size: 6rem;
+    }
+
+    /* ORGANISATIONAL CHART */
+    h4 {
+        font-size: 7rem;
+        text-align: center;
+    }
+    #chart {
+        font-size: 5rem;
+    }
+    .container {
+        position: relative;
+    }
+    #emoji {
+        width: 80%;
+    }
+    #v {
+        position: absolute;
+        top: 5%;
+    }
+    #s {
+        position: absolute;
+        top: 30%;
+        left: 15%;
+    }
+    #n {
+        position: absolute;
+        top: 30%;
+        left: 15%;
+    }
+    #g {
+        position: absolute;
+        top: 30%;
+        left: 25%;
+    }
+    #t {
+        position: absolute;
+        top: 25%;
+        left: 10%;
+    }
+    #r {
+        position: absolute;
+        top: 25%;
+        left: 16%;
+    }
+
+    /* SOFTWARES */
+    #titleSoftware {
+        font-size: 7rem;
+        text-align: center;
+    }
+    #softwareContainer {
+        font-size: 6rem;
+        margin: 5%;
+    }
+    .subTitle {
+        font-size: 6.5rem;
+        text-align: center;
+    }
+    #imgResa {
+        width: 150%;
+    }
+    #imgCPS {
+        width: 190%;
+    }
+    #imgStadline {
+        width: 50%;
+    }
+    #imgClarilog {
+        width: 80%;
+        height: 80%;
+    }
+    #imgHub {
+        width: 130%;
+    }
+    #imgLiveServer {
+        width: 100%;
+    }
+
+    /* TASKS */
+    caption {
+        font-size: 6rem;
+    }
+    #table {
+        font-size: 5rem;
+    }
+
+    #network {
+        width: 150%;
+    }
+    #networkTitle {
+        font-size: 7rem;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #buttonContainer {
+        display: none;
+    }
+    #chart {
+        font-size: 3rem;
+    }
+    #profession {
+        font-size: 2rem;
+    }
+    #softwareContainer {
+        font-size: 2rem;
+    }
+    #network {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+    }
+    h2 {
+        text-align: center;
+    }
+    #networkImg {
+        width: 20%;
+        margin: 2rem; /* marche pas */
+    }
+}
+
+/* VERSION DESKTOP : au hover sur mon emoji afficher autour toutes mes missions
+   VERSION MOBILE :  */
+
+@media only screen and (min-width: 1200px) {
+    #buttonContainer, #mobileContainer {
+        display: none;
+    }
+
+    /* COMPANY PRESENTATION */
+    h1 {
+        text-align: center;
+        font-size: 3rem;
+    }
+    #company-identity {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-left: 15%;
+        margin-bottom: 3%;
+    }
+    #comapny-logo {
+        width: 25%;
+        height: 25%;
+    }
+    #prez {
+        margin: 5%;
+        font-size: 1.5rem;
+        width: fit-content;
+    }
+
+    /* SOFTWARES */
+    #softwares {
+        margin-left: 2rem;
+        margin-right: 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #softwareContainer {
+        display: flex;
+        flex-direction: column;
+    }
+    .img {
+        width: 30%;
+        height: 10%;
+    }
+
+    h3 {
+        text-align: center;
+        font-weight: 900;
+        font-size: 2rem;
+    }
+
+
+    /* ORGANISATIONAL CHART */
+    h4 {
+        text-align: center;
+        font-size: 2rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-bottom: 0%;
+        padding: 2rem;
+        background: #86af62f3;
+    }
+    #chartTitle {
+        font-size: 1.5rem;
+    }
+    #chart {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        gap: 10px;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-bottom: 2rem;
+        padding: 2rem;
+        background: #86af62f3;
+    }
+    #chartTitle {
+        text-align: center;
+    }
+    #chartApplicationSofware {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 10px;
+    }
+    #chartProfileV {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+    #chartProfileS {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+    #chartProfileN {
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;
+    }
+    #chartSystem {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 10px;
+    }
+    #profession {
+        text-align: center;
+        /*text-shadow: 2px 2px 0px rgb(162, 153, 153);*/
+    }
+    #chartProfileG {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+    #chartProfileU {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+    #chartProfileU > #profession {
+        margin-left: 40px;
+    }
+    #chartProfileT {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+    #chartProfileT > #profession {
+        margin-left: 40px;
+    }
+    #chartProfileR {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+    #chartProfileR > #profession {
+        margin-left: 40px;
+    }
+    #chartProfile {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        text-align: center;
+    }
+    h3 {
+        margin-bottom: 0%;
+        text-align: center;
+    }
+    #chartApplicationSofware #emoji {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-left: 19px;
+        box-shadow: 6px 6px 0px rgb(77, 70, 70);
+    }
+    #chartSystem #emoji {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-left: 65px;
+        box-shadow: 6px 6px 0px rgb(77, 70, 70);
+    }
+
+    /* MISSIONS */
+    table {
+        margin: 0 3% 0 3%;
+    }
+    caption {
+        font-size: 2rem;
+        padding-bottom: 20px;
+    }
+    td {
+        border: 2px solid black;
+        padding: 12px;
+        margin: 50px; /* MARCHE PAS */
+        background: #b5a968;
+    }
+}

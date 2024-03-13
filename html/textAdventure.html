@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rugby Trocical Cup Project</title>
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/textAdventure.css">
+</head>
+<body>
+    <header id = "menu">
+        <div id="top-menu">
+            <img id="menuButton" src="/img/page_accueil/menu.png" onclick="menuButton('it worked')">
+            <img id="menuCross" src="/img/page_accueil/cross.png">
+        </div>
+        <nav id="navbar">
+            <div id="logoContainer">
+                <span id="logoTitle">NIRMALA</span>
+            </div>
+            <div class="menu">
+                <ul id="menuList">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="entreprise.html">Company</a></li>
+                    <li id="menuAchievements"><a href="" onmouseover="showAchievements()">Projects</a>
+                        <ul id="achievements">
+                            <li><a href="/html/projetsEcole.html">Academic</a></li>
+                            <li><a href="#">Company</a></li>
+                                <ul id="years">
+                                    <li><a href="/html/projetsEnt1.html">First year</a></li>
+                                    <li><a href="/html/projetEnt2.html">Second year</a></li>
+                                </ul>
+                        </ul>
+                    </li>
+                    <li><a href="veille.html">Technology watch</a></li>
+                    <li><a href="bilan.html">Report</a></li>
+                </ul>
+        </div>
+        </nav>
+    </header>
+
+    <!-- AJOUTER L'IMAGE -->
+    <img id="logoRTC" src="" alt="TextAdventureLogo">
+
+    <div class="container">
+        <div class="left">
+            <span>SOFT SKILLS</span>
+            <ul id="softSkills">
+                <li>Organisation</li>
+            </ul>
+        </div>
+
+        <div class="mainContent">
+            <div class="content">
+                <h2>Genin Exam Game</h2>
+            <span>Duration : from 01/05/23 to ...</span> <br>
+                <div id="p"> <!--determnier les BESOINS-->
+                    <p id="purpose">Purpose : The manga Naruto would like to be adpated in a video game, so to confirm the gameplay ideas, the different dialogues, and to sum up everything we would like to do in this game, we'll make a textual game in a computer terminal.</p>
+                    <p id="softwares">Programming language : Python </p>
+                    <p>Software : VS Code</p>
+                    <p id="prez">Presentation : In this textual game you have to win 3 fights after which they give you a badge. If you bring back 3 badges to Iruka Sensei (the teacher) you win this game but loosing all of your life points would mean that you loose the game.</p>
+                </div>
+            </div>
+
+            <div class="content">
+                <span>Planning</span>
+                <div id="months"> <!--faire un tableau avec colonne = mois, ligne = div-->
+                    <span>April</span>
+                    <span>May</span>
+                    <span>June</span>
+                    <span>September</span>
+                    <span>October</span>
+                    <span>November</span>
+                </div>
+            </div>
+
+            <div class="content">
+                <h3>SNIPPET OF CODE</h3>
+                <div id="codeContainer">
+                    <img class="codeImages" src="/img/extrait_code/textAdventure1.png" alt="code">
+                    <img class="codeImages" src="/img/extrait_code/textAdventure2.png" alt="code">
+                </div>
+            </div>
+
+            <div class="content">
+                UNIT TEST
+            </div>
+        </div>
+
+        <div class="right">
+            <h4>DOCUMENTS</h4>
+            <ul id="docs">
+                <li class="btn">Specifications</li>
+                <li class="btn">Planning</li>
+                <li class="btn">Snippet of code</li>
+                <li class="btn">Unit test</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <a href="https://www.linkedin.com/feed/">Linkedin</a>
+        <!--<img id="linkedin" alt="image" src="/img/page_accueil/linkedin.png">-->
+
+        <a href="/html/mentionsLegales.html">Mentions Légales</a>
+    </footer>
+    <script src="/realisation.js"></script>
+</body>
+</html>

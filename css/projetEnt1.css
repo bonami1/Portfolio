@@ -1,0 +1,151 @@
+@media only screen and (min-width: 200px) {
+
+}
+
+@media only screen and (min-width: 768px) {
+
+}
+
+@media only screen and (min-width: 1200px) {
+    body {
+        margin: 0;
+        font-family: Helvetica, sans-serif;
+        background: #000;
+    }    
+    .imageSlider {
+        min-height: 30em;
+        height: 100vh;
+        position: relative;
+        background-image: url(/img/ticketClarilog/01\ Seyssins.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        transition: 0.3s;
+    }
+    .imageSlider * {
+        box-sizing: border-box;
+    }
+    .caption {
+        background: linear-gradient(
+            rgb(0,0,0,0),
+            #000
+        );
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 4em 1em 2em 1em;
+        text-align: center;
+    }
+    .caption h3 {
+        margin: 0;
+        color: #fff;
+    }
+    p {
+        color: #8a8a8a;
+    }
+    .arrowLeft, .arrowRight {
+        background: #fff;
+        position: absolute;
+        top: 40%;
+        width: 3em;
+        height: 3em;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    .arrowLeft:hover, .arrowRight:hover {
+        background: #000;
+        color: #fff;
+    }
+    .arrowLeft {
+        right: 1em;
+    }
+
+    .imageFade {
+        animation: imgFade 0.5s ease-in-out;
+    }
+    @keyframes imgFade {
+        0% {opacity: 0;}     
+        100% {opacity: 1;}   
+    }
+
+
+    #container {
+        width: 90%;
+        height: 70%;
+        border: 2px solid black;
+    }
+    .ticketContainer, #imageContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+h2 {
+    text-align: center;
+}
+#container {
+    margin: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+span {
+    font-size: 1.5rem;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+.photoTicketing1 {
+    width: 80%;
+    height: 50%;
+}
+.photoTicketing2 {
+    width: 50%;
+    height: 20%;
+}
+.photoTicketing3 {
+    width: 50%;
+    height: 20%;
+}
+.photoTicketing4 {
+    width: 70%;
+    height: 50%;
+}
+.photoTicketing5 {
+    width: 50%;
+    height: 30%;
+}
+.photoTicketing6 {
+    width: 600px;
+    height: 900px;
+}
+.photoTicketing7 {
+    width: 600px;
+    height: 900px;
+}
+.photoTicketing8 {
+    width: 600px;
+    height: 500px;
+}
+.photoTicketing9 {
+    width: 550px;
+    height: 500px;
+}
+.photoTicketing10 {
+    width: 80%;
+    height: 50%;
+}
+
+#schemaTicket {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    height: 40%;
+}

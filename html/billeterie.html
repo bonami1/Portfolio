@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rugby Trocical Cup Project</title>
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/billeterie.css">
+</head>
+<body>
+    <header id = "menu">
+        <div id="top-menu">
+            <img id="menuButton" src="/img/page_accueil/menu.png" onclick="menuButton('it worked')">
+            <img id="menuCross" src="/img/page_accueil/cross.png">
+        </div>
+        <nav id="navbar">
+            <div id="logoContainer">
+                <span id="logoTitle">NIRMALA</span>
+            </div>
+            <div class="menu">
+                <ul id="menuList">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="entreprise.html">Company</a></li>
+                    <li id="menuAchievements"><a href="" onmouseover="showAchievements()">Projects</a>
+                        <ul id="achievements">
+                            <li><a href="/html/projetsEcole.html">Academic</a></li>
+                            <li><a href="#">Company</a></li>
+                                <ul id="years">
+                                    <li><a href="/html/projetsEnt1.html">First year</a></li>
+                                    <li><a href="/html/projetEnt2.html">Second year</a></li>
+                                </ul>
+                        </ul>
+                    </li>
+                    <li><a href="veille.html">Technology watch</a></li>
+                    <li><a href="bilan.html">Report</a></li>
+                </ul>
+        </div>
+        </nav>
+    </header>
+
+    <!-- AJOUTER L'IMAGE -->
+    <img id="logoRTC" src="" alt="billeterieLogo">
+
+    <div class="container">
+        <div class="left">
+            <span>SOFT SKILLS</span>
+            <ul id="softSkills">
+                <li>Organisation</li>
+            </ul>
+        </div>
+
+        <div class="mainContent">
+            <div class="content">
+                <h2>Billeterie</h2>
+            <!--<span>Duration : from 01/05/23 to ...</span> <br>-->
+            <div id="p">
+                <p id="purpose">Purpose : I had to develop a simple version of a ticket counter that work on a computer terminal in addition to existants tickets machines. Its use will only be if there is a machine failure.</p>
+                <p id="softwares">Programming languages / Python <br>Softwares : VS Code</p>
+                <!--<p>Softwares : VS Code</p>-->
+                <p id="prez">Presentation : In a computer terminal the user has to type in the number of tickets he wants, the rates' types, and the the first and last stations he would like to take. Then the program will display the tickets' price, which train to take and in what direction.</p>
+            </div>
+            </div>
+
+            <div class="content">
+                <span>Planning</span>
+                <div id="months"> <!--faire un tableau avec colonne = mois, ligne = div-->
+                    <span>April</span>
+                    <span>May</span>
+                    <span>June</span>
+                    <span>September</span>
+                    <span>October</span>
+                    <span>November</span>
+                </div>
+            </div>
+
+            <div class="content">
+                <h3>SNIPPET OF CODE</h3>
+                <div id="codeContainer">
+                    <img id="billeterie1" src="/img/extrait_code/billeterie1.png" alt="billeterieSnippetOfCode">
+                    <img id="billeterie2" src="/img/extrait_code/billeterie.png" alt="billeterieSnippetOfCode">
+                </div>
+                
+            </div>
+
+            <div class="content">
+                UNIT TEST
+            </div>
+        </div>
+
+        <div class="right">
+            <h4>DOCUMENTS</h4>
+            <ul id="docs">
+                <li class="btn">Specifications</li>
+                <li class="btn">Planning</li>
+                <li class="btn">Snippet of code</li>
+                <li class="btn">Unit test</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <a href="https://www.linkedin.com/feed/">Linkedin</a>
+        <!--<img id="linkedin" alt="image" src="/img/page_accueil/linkedin.png">-->
+
+        <a href="/html/mentionsLegales.html">Mentions Légales</a>
+    </footer>
+    <script src="/realisation.js"></script>
+</body>
+</html>

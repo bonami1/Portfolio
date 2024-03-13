@@ -1,0 +1,176 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Technology watch</title>
+        <link rel="stylesheet" href="/css/common.css">
+        <link rel="stylesheet" href="/css/veille.css">
+    </head>
+
+    <header id = "menu">
+        <div id="top-menu">
+            <img id="menuButton" src="/img/page_accueil/menu.png" onclick="menuButton('it worked')">
+            <img id="menuCross" src="/img/page_accueil/cross.png">
+        </div>
+        <nav id="navbar">
+            <div id="logoContainer">
+                <span id="logoTitle">NIRMALA</span>
+            </div>
+            <div class="menu">
+                <ul id="menuList">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="entreprise.html">Company</a></li>
+                    <li id="menuAchievements"><a href="" onmouseover="showAchievements()">Projects</a>
+                        <ul id="achievements">
+                            <li><a href="/html/projetsEcole.html">Academic</a></li>
+                            <li><a href="#">Company</a></li>
+                                <ul id="years">
+                                    <li><a href="/html/projetsEnt1.html">First year</a></li>
+                                    <li><a href="/html/projetEnt2.html">Second year</a></li>
+                                </ul>
+                        </ul>
+                    </li>
+                    <li><a href="veille.html">Technology watch</a></li>
+                    <li><a href="bilan.html">Report</a></li>
+                </ul>
+        </div>
+        </nav>
+    </header>
+
+    <body>
+        <h1>The downside of Internet of Things</h1>
+
+        <select name="order" onchange="sortArticles(event)">
+            <option class="option" value="note">Rating</option>
+            <option class="option" value="date">Date</option>
+        </select>
+
+        <div id="container">
+            <div id="articlesContainer">
+            <div class="articles">
+                <h2>The european union will pass an agreement : the cyber resilience act to secure the internet of things</h2>
+                <span class="date" data-date="12/07/2023"><b>December 7th 2023</b></span>
+                <span class="writter"><b>Writter :</b>Olivier Devillers</span>
+                <span class="source"><b>Source : </b>Banque des territoires</span>
+                <span class="summary"><b>Summary :</b><br>This agreement will control every connected objects and check if they did update regularly and make them report every security vulnerability. The purpose is to lower the number of vulnerabilities in objects to prevent from data extraction. In 2024, manufacturers and importer will have 36 months to adapt.</span>
+                <div class="articleBottom">
+                    <span id="rating" data-note="4"><b>Rating</b><img class="star" src="/img/veille/star_icon.png" alt="star"><img class="star" src="/img/veille/star_icon.png" alt="star"><img class="star" src="/img/veille/star_icon.png" alt="star"><img class="star" src="/img/veille/star_icon.png" alt="star"></span>
+                    <a href="https://www.banquedesterritoires.fr/lue-adopte-le-cyber-resilience-act-pour-securiser-les-objets-connectes">
+                        <button>Read the article</button></a>
+                </div>
+            </div>
+
+            <div class="articles">
+                <h2>Transforming connected objects into snitches</h2>
+                <span class="date" data-date="05/31/2023"><b>May 31 2023</b></span>
+                <span class="writter"><b>Writter : </b></span>
+                <span class="source"><b>Source : </b>La quadrature du Net</span>
+                <span class="summary"><b>Summary</b>There is a new law project that will allow judicial inverstigators to activate our connected objects whithout our consent to hear, record and geolocate us. This method is said to be used within the framework of remote intervention, extension of police custody, and even extension of night search. In those cases, it will be used to geolocation a car, hear and record everything with our cellphone, microphone and film everython from our phome camera angle even if it's not turned on</span>
+                <div class="articleBottom">
+                    <span id="rating" data-note="5"><b>Rating</b><img class="star" src="/img/veille/star_icon.png" alt="star"><img class="star" src="/img/veille/star_icon.png" alt="star"><img class="star" src="/img/veille/star_icon.png" alt="star"><img class="star" src="/img/veille/star_icon.png" alt="star"><img class="star" src="/img/veille/star_icon.png" alt="star"></span>
+                    <a href="https://www.laquadrature.net/2023/05/31/transformer-les-objets-connectes-en-mouchards-la-surenchere-securitaire-du-gouvernement/"><button>Read the article</button></a>
+                </div>
+            </div>
+
+            <div class="articles">
+                <h2>ProvenRun raises 15 million euros to enhance the cybersecurity of connected objects</h2>
+                <span class="date" data-date="12/06/2023">December 06 2023</span>
+                <span class="writter"><b>Writter : </b>Colin Korsak</span>
+                <span class="source"><b>Source : </b>Be A Boss</span>
+                <span class="summary"><b>Summary : </b>This startup specialize in cybersecurity of connected objects, they develop an Operating System and secured applications for connected cars and intelligent devices. With the money they just raised, they plan to increase security in their objects but also expend their activity in North America.</span>
+                <div class="articleBottom">
+                    <span id="rating" data-note="3"><b>Rating</b><img class="star" src="/img/veille/star_icon.png" alt="star"><img class="star" src="/img/veille/star_icon.png" alt="star"><img class="star" src="/img/veille/star_icon.png" alt="star"></span>
+                    <a href="https://www.techniques-ingenieur.fr/actualite/articles/des-objets-connectes-fonctionnant-sans-pile-123551/"><button>Read the article</button></a>
+                </div>
+            </div>
+
+            <div class="articles">
+                <h2>Google Home suddenly becomes unusable</h2>
+                <span class="date" data-date="04/06/2023">April 06 2023</span> 
+                <span class="writter"><b>Writter : </b>Sam Azzemou</span>
+                <span class="source"><b>Source : </b>Phonandroid</span>
+                <span class="summary"><b>Summary : </b>Many Google Home users reported problems regarding its working failure. When users switch on the device, it start its sentence and then crash. Google is actively searching for a solution but the main reason might be because the device is outdated.</span>
+                <div class="articleBottom">
+                    <span id="rating" data-note="2"><b>Rating</b><img class="star" src="/img/veille/star_icon.png" alt="star"><img class="star" src="/img/veille/star_icon.png" alt="star"></span>
+                    <a href="https://www.phonandroid.com/des-google-home-et-home-mini-deviennent-soudainement-inutilisables.html"><button>Read the article</button></a>
+                </div>
+            </div>
+
+            <div class="articles">
+                <h2>Do our connected device diclose our personal data ?</h2>
+                <span class="date" data-date="06/11/2023">November 06 2023</span>
+                <span class="writter"><b></b></span>
+                <span class="source"><b>Source : </b>CBC News</span>
+                <span class="summary"><b>Summary : </b>A member of an international searchers studied connected houses and their threat  to people's safety and private life. They found that every device can comunicate their serial number and then identify the type of device and the house's fingerprint.</span>
+                <div class="articleBottom">
+                    <span id="rating" data-note="3"><b>Rating</b><img class="star" src="/img/veille/star_icon.png" alt="star"><img class="star" src="/img/veille/star_icon.png" alt="star"><img class="star" src="/img/veille/star_icon.png" alt="star"></span>
+                    <a href="https://ici.radio-canada.ca/nouvelle/2023473/securite-telecommunication-telephones-intelligents-interconnectivite"><button>Read the article</button></a>
+                </div>
+            </div>
+
+            <div class="articles">
+                <h2>The Find me Apple's network can extract our data without us knowing</h2>
+                <span class="date" data-date="11/07/2023">Novembre 07 2023</span>
+                <span class="writter"><b>Writter : </b>Pierre Dandumont</span>
+                <span class="source"><b>Source : </b>iGeneration</span>
+                <span class="summary"><b>Summary : </b>A research team havec shared an interesting solution to recover data in secret. Apple used a key pair in criptology to find a device but it turns out that the public key can be trafiked.</span>
+                <div class="articleBottom">
+                    <span id="rating" data-note="4"><b>Rating</b><img class="star" src="/img/veille/star_icon.png" alt="star"><img class="star" src="/img/veille/star_icon.png" alt="star"><img class="star" src="/img/veille/star_icon.png" alt="star"><img class="star" src="/img/veille/star_icon.png" alt="star"></span>
+                    <a href="https://www.igen.fr/ailleurs/2023/11/le-reseau-localiser-dapple-peut-exfiltrer-des-donnees-en-douce-140291"><button>Read the article</button></a>
+                </div>
+            </div>
+
+            <div class="articles">
+                <h2>How our smartTV collect and sell our personal data ?</h2>
+                <span class="date" data-date="03/06/2024">March 06 2024</span>
+                <span class="writter"><b>Writter : </b>Emile BENECH</span>
+                <span class="source"><b>Source : </b>L'édition du soir</span>
+                <span class="summary"><b>Summary : </b>SmartTVs are like computers with a screen and speekers that communicate our data except that we don't know what is happening inside. Here Samsung collect our personal data to send better add according to our preferences.</span>
+                <div class="articleBottom">
+                    <span id="rating" data-note="4"><b>Rating</b><img class="star" src="/img/veille/star_icon.png" alt="star"><img class="star" src="/img/veille/star_icon.png" alt="star"><img class="star" src="/img/veille/star_icon.png" alt="star"><img class="star" src="/img/veille/star_icon.png" alt="star"></span>
+                    <a href="https://www.ouest-france.fr/leditiondusoir/2024-03-06/comment-votre-tele-connectee-recolte-et-revend-vos-donnees-personnelles-en-toute-tranquillite-952912e6-17b6-403f-a95d-a26b46e7239f"><button>Read the article</button></a>
+                </div>
+            </div>
+
+            <div class="articles">
+                <h2>Do smart objects really listen to everything at home ?</h2>
+                <span class="date" data-date="03/06/2024">March 06 2024</span>
+                <span class="writter"><b>Writter : </b>Ismail SARAOUI</span>
+                <span class="source"><b>Source : </b>Challenge</span>
+                <span class="summary"><b>Summary : </b>Beyond their utility at home, smart objects are there to recolt and process our data to their company. An old employee at Microsoft testified that they collect every request made to a vocal assistant Cortana, have to listen to them and then transcript at least 120 per hour.</span>
+                <div class="articleBottom">
+                    <span id="rating" data-note="4"><b>Rating</b><img class="star" src="/img/veille/star_icon.png" alt="star"><img class="star" src="/img/veille/star_icon.png" alt="star"><img class="star" src="/img/veille/star_icon.png" alt="star"><img class="star" src="/img/veille/star_icon.png" alt="star"></span>
+                    <a href="https://www.challenge.ma/les-objets-connectes-a-la-maison-nous-ecoutent-ils-vraiment-277492/"><button>Read the article</button></a>
+                </div>
+            </div>
+
+            <div class="articles">
+                <h2>Every smart object is hackable</h2>
+                <span class="date" data-date="03/01/2024">March 01 2024</span>
+                <span class="writter"><b>Writter : </b>Rédaction de TF1Info</span>
+                <span class="source"><b>Source : </b>TF1Info</span>
+                <span class="summary"><b>Summary : </b>With only a computer it is possible to hack a car, make it strat and without touching it and even sell it with a new key. Hacker have invade our daily routine so we have to be even more careful as to which password choose, keeping the last update.</span>
+                <div class="articleBottom">
+                    <span id="rating" data-note="2"><b>Rating</b><img class="star" src="/img/veille/star_icon.png" alt="star"><img class="star" src="/img/veille/star_icon.png" alt="star"></span>
+                    <a href="https://www.tf1info.fr/high-tech/video-enquete-tf1-objets-connectes-risques-voitures-cameras-jouets-tout-ce-qui-est-connecte-est-piratable-2287861.html"><button>Read the article</button></a>
+                </div>
+            </div>
+        </div>
+
+        <!--<div id="right">
+            <span>Pourquoi ce sujet</span>
+            <span>Outils de veille</span>
+        </div>-->
+    </div>
+
+        <footer>
+            <a href="https://www.linkedin.com/feed/">Linkedin</a>
+            <!--<img id="linkedin" alt="image" src="/img/page_accueil/linkedin.png">-->
+
+            <a href="/html/mentionsLegales.html">Mentions Légales</a>
+        </footer>
+
+        <script src="/common.js"></script>
+        <script src="/js/veille.js"></script>
+    </body>
+</html>

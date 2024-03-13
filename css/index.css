@@ -1,0 +1,318 @@
+@media only screen and (max-width: 600px) {
+    body {
+        width: 400%;
+    }
+    .container {
+        display: none;
+    }
+
+    .tabBtn {
+        background: #a9a9a9;
+        border: 2px solid black;
+        font-size: 10rem;
+        width: 100%;
+        padding: 30px;
+
+    }
+
+    /* COMMON */
+    #mooc1, #mooc2, #mooc3, #mooc4, #background1, #background2,#programmingLanguage, #softwares {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #profil, #schoolBackground, #moocContainer, #programmingLanguage, #softwares, #hobbies {
+        display: none;
+    }
+    #mooc:checked + #moocContainer {
+        display: block;
+    }
+
+    /* PROFILE */
+    #profile {
+        position: absolute;
+        top: 0%;
+    }
+    #presentation {
+        font-size: 6rem;
+        text-align: center;
+    }
+
+    /* SCHOOL BACKGROUND */
+    #school-background {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #background1, #background2 {
+        margin-bottom: 9%;
+        font-size: 9rem;
+    }
+    #imageParcours1, #imageParcours2 {
+        width: 60%;
+        height: 60%;
+    }
+
+    /* CERTIFS MOOC */
+    #mooc1, #mooc2, #mooc3, #mooc4 {
+        padding: 20px;
+        margin-bottom: 50px;
+        font-size: 9rem;
+        text-align: center;
+    }
+    #image1, #image2, #image3 {
+        width: 60%;
+        height: 60%;
+    }
+
+    /* LANGUAGES */
+    #langagesImg1, #langagesImg2, #langagesImg3, #langagesImg4, #langagesImg5, #langagesImg6 {
+        width: 90%;
+    }
+    #langagesImg7 {
+        width: 100%;
+    }
+
+    /* SOFTWARES */
+    #intellij, #vscode, #gitlab, #gitbash, #wamp {
+        width: 80%;
+        margin: 50px;
+    }
+    #github {
+        width: 110%;
+        margin: 50px;
+    }
+
+    /* HOBBIES */
+    #hobby {
+        display: grid;
+        grid-gap: 100px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 250px 1fr;
+    }
+    #dessin, #cinema {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+    }
+    #dessin {
+        grid-column: 1/2;
+    }
+    #cinema {
+        grid-column: 2/3;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    /*body {
+        background: #868383;
+    }*/
+}
+
+@media only screen and (min-width: 1200px) {
+    #title, #langagesTitle, #centresInteretTitle {
+        font-size: 3rem;
+    }
+
+    #mobileContainer {
+        display: none;
+    }
+    
+    /* NAVBAR */
+    #top-menu {
+        display: none;
+    }
+
+    /* CONTAINER */
+    .container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 80%;
+    }
+    .tabs {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-top: 40px;
+    }
+    .tabs .tabBtn {
+        background-color: #ffffff;
+        text-decoration: none;
+        border: none;
+        padding: 10px;
+        margin: 10px;
+    }
+    .tabs .tabBtn:hover {
+        background-color: rgb(111, 111, 251);
+        color: white;
+    }
+    .tabs .tabBtn.active {
+        background-color: rgb(111, 111, 251);
+        color: white;
+    }
+    .divContent {
+        width: 80%;
+        float: right; /* MARCHE PAS */
+    }
+    .divContent .content {
+        display: none;
+    }
+    .divContent .content.active {
+        display: block;
+    }
+    
+    /* PROFIL */
+    #profile {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        margin-left: 50px;
+    }
+    #profilePicture {
+        width: 40%;
+        height: 40%;
+    }
+    #presentation {
+        font-size: 2rem;
+        text-align: left;
+    }
+    #presentation li {
+        margin: 20px;
+        list-style: none;
+    }
+    
+    /* PARCOURS SCOLAIRE */
+    #schoolBackground {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+        margin-left: 180px;
+    }
+    #background1, #background2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #schoolBackground .text {
+        font-size: 1.3rem;
+    }
+    #imageParcours1 {
+        width: 150%;
+    }
+    #imageParcours2 {
+        width: 35%;
+    }
+    
+    /* MOOC */
+    #moocContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 30px;
+        margin-left: 40px;
+    }
+    #mooc1 {
+        margin: 20px;
+        height: 60%;
+        background: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #image1 {
+        width: 90%;
+        height: 90%;
+    }
+    #mooc2 {
+        margin: 20px;
+        height: 60%;
+        background: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #image2 {
+        width: 60%;
+        height: 60%;
+    }
+    #mooc3 {
+        margin: 20px;
+        height: 60%;
+        background: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #image3 {
+        width: 90%;
+        height: 90%;
+    }
+    #mooc4 {
+        margin: 20px;
+        height: 60%;
+        background: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #image4 {
+        width: 30%;
+        height: 30%;
+    }
+    
+    /* LANGAGES INFORMATIQUES */
+    #programmingLanguage {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    #langagesImg1, #langagesImg2, #langagesImg3, #langagesImg4, #langagesImg5, #langagesImg6, #langagesImg7 {
+        width: 10%;
+        height: 10%;
+    }
+    
+    /* SOFTWARES USED */
+    #softwares {
+        margin-left: 5%;
+        margin-top: 70px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    #intellij, #vscode, #gitlab, #gitbash {
+        width: 10%;
+        height: 10%;
+    }
+    #github, #wamp {
+        width: 20%;
+        height: 20%;
+    }
+    
+    /* CENTRES D'INTERETS */
+    #hobbies {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #dessin .text, #cinema .text {
+        font-size: 2rem;
+    }
+    #dessin .img, #cinema .img {
+        width: 190%;
+        height: 100%;
+    }
+    
+}

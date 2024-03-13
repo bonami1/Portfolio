@@ -1,0 +1,100 @@
+.container {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 230px auto 250px;
+}
+
+/* SOFTSKILLS ON THE LEFT */
+.left {
+    background: #435bf8;
+    text-align: center;
+}
+#softSkills {
+    padding: 0%;
+}
+#softSkills li {
+    margin: 30px;
+    padding: 5px;
+    border: 2px solid black;
+}
+
+/* MAIN IN THE CENTER */
+.mainContent {
+    background: #68b4ff;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 9px;
+}
+.mainContent .content {
+    display: none;
+}
+.mainContent .content.active {
+    display: block;
+}
+.mainContent h2 {
+    text-align: center;
+}
+#p {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 9px;
+}
+#purpose {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 6px;
+}
+#softwares {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 6px;
+}
+#prez {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 6px;
+    grid-column: 1/3;
+}
+
+/* DOCUMENTS ON THE RIGHT */
+.right {
+    background: #435bf8;
+    text-align: center;
+}
+.right .btn.active {
+    background: rgb(107, 129, 255);
+}
+#docs {
+    padding: 0%;
+}
+#docs li {
+    margin: 30px;
+    padding: 5px;
+    text-align: center;
+    border: 2px solid black;
+}
+#docs li:hover {
+    background: rgb(107, 129, 255);
+    color: white;
+    border: 2px solid rgb(107, 129, 255);
+    text-shadow: 2px 2px 4px rgb(52, 52, 52);
+}
+#docs li:hover img {
+    display: block;
+}
+#docs img {
+    display: none;
+}
+
+/* SNIPPET OF CODE */
+#codeContainer {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    scrollbar-color: rebeccapurple green;
+    scrollbar-width: thin;
+}
+#billeterie1, #billeterie2 {
+    width: 100%;
+    height: 20%;
+}

@@ -1,0 +1,181 @@
+@media only screen and (max-width: 600px) {
+    html {
+        background: #c2c2c2;
+    }
+    body {
+        margin: 0%;
+    }
+
+    #menu, #achievements {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;   
+    }
+    #top-menu {
+        width: 100%;
+    }
+    #menuButton, #menuCross {
+        width: 15%;
+        height: auto;
+    }
+    #menuCross {
+        display: none;
+    }
+    #logoContainer {
+        display: none;
+    }
+    #menuList {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        height: 50%;
+    }
+    #menuList li {
+        margin: 110px;
+    }
+    #menuList li a {
+        font-size: 10rem;
+        list-style-type: none;
+        text-decoration: none;
+        color: black;
+    }
+    #achievements li  {
+        list-style-type: none;
+    }
+    #projectMenuTitle {
+        display: none;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 70rem;
+        margin: 6% 0% 0% 0%;
+        background: #6a6a6a;
+    }
+    footer > a {
+        font-size: 9rem;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        margin: 0%;
+    }
+}
+
+/* MEDIA QUERRY */
+@media only screen and (min-width: 1200px) {
+    html {
+        background: #c5c5c5;
+    }
+    body {
+        margin: 0%;
+    }
+    #top-menu {
+        display: none;
+    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-image: linear-gradient(to bottom left, purple, indigo);
+    }
+
+    #navbar ul, #navbar li {
+        margin: 0%;
+        padding: 0%;
+    }
+    #navbar ul {
+        /*background: #edb9b9;*/
+        list-style: none;
+        width: 100%;
+    }
+    #navbar li {
+        float: left;
+        position: relative;
+        width: auto;
+    }
+    #navbar a {
+        color: white;
+        display: block;
+        height: 40px;
+        font-weight: 400;
+        font-size: 13px;
+        font-family: 'Poppins', sans-serif;
+        text-transform: uppercase;
+        padding: 15px 35px;
+        text-align: center;
+        text-decoration: none;
+        transition: all 0.25s, ease;
+    }
+    #navbar li:hover a {
+        background: rgb(150, 35, 244);
+    }
+    #achievements {
+        top: 55px;
+        left: 0;
+        opacity: 0;
+        position: absolute;
+        visibility: hidden;
+        z-index: 1;
+    }
+    li:hover ul#achievements {
+        opacity: 1;
+        visibility: visible;
+    }
+    #achievements li {
+        float: none;
+        width: 100%;
+    }
+    #achievements a:hover {
+        background: #27c04d;
+    }
+    #achievements a {
+        background: rgb(156, 201, 23)434;
+    }
+    #years {
+        top: 0;
+        left: 138px;
+        opacity: 0;
+        position: absolute;
+        visibility: hidden;
+        z-index: 1;
+    }
+    li:hover ul#years {
+        opacity: 1;
+        visibility: visible;
+    }
+    #years li {
+        float: none;
+        width: 100%;
+    }
+    #years a {
+        height: 30px;
+    }
+    #years a:hover {
+        background: #5bac4e;
+    }
+    #years a {
+        background: rgb(0, 0, 0);
+    }
+
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 100px;
+        /*margin: 0%;*/
+        margin-top: 6%;
+        background: #6a6a6a;
+    }
+    footer > a {
+        font-size: 1rem;
+    }
+}
