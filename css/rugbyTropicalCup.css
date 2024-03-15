@@ -124,3 +124,79 @@ footer {
     margin-top: 15%;
 }
 }
+
+@media only screen and (min-width: 768px) {
+
+}
+
+@media only screen and (min-width: 1200px) {
+    .preview {
+        width: 90%;
+    }
+
+    body {
+        margin: 0;
+        font-family: Helvetica, sans-serif;
+    }    
+    .imageSlider {
+        min-height: 30em;
+        height: 100vh;
+        position: relative;
+        background-image: url(/img/ticketClarilog/01\ Seyssins.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        transition: 0.3s;
+        margin: 20px;
+    }
+    .imageSlider * {
+        box-sizing: border-box;
+    }
+    .caption {
+        background: linear-gradient(
+            rgb(0,0,0,0),
+            #000
+        );
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 4em 1em 2em 1em;
+        text-align: center;
+    }
+    .caption h3 {
+        margin: 0;
+        color: #fff;
+    }
+    p {
+        color: #8a8a8a;
+    }
+    .arrowLeft, .arrowRight {
+        background: #fff;
+        position: absolute;
+        top: 40%;
+        width: 3em;
+        height: 3em;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    .arrowLeft:hover, .arrowRight:hover {
+        background: #000;
+        color: #fff;
+    }
+    .arrowLeft {
+        right: 1em;
+    }
+
+    .imageFade {
+        animation: imgFade 0.5s ease-in-out;
+    }
+    @keyframes imgFade {
+        0% {opacity: 0;}     
+        100% {opacity: 1;}   
+    }
+}

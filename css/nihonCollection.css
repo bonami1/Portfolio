@@ -347,3 +347,7 @@ td, th {
 .code {
     width: 800px;
 }
+
+.preview {
+    width: 100%;
+}

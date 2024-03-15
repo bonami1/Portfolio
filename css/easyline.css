@@ -62,4 +62,14 @@
     .code {
         width: 800px;
     }
+
+    .preview {
+        width: 130%;
+    }
+    .previewCDiag {
+        width: 100%;
+    }
+    .previewUCDiag {
+        width: 100%;
+    }
 }
