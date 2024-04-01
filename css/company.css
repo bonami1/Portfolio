@@ -135,7 +135,7 @@
     }
 }
 
-@media only screen and (max-width: 768px) {
+/*@media only screen and (max-width: 768px) {
     #buttonContainer {
         display: none;
     }
@@ -160,14 +160,14 @@
     }
     #networkImg {
         width: 20%;
-        margin: 2rem; /* marche pas */
+        margin: 2rem; /* marche pas 
     }
-}
+}*/
 
 /* VERSION DESKTOP : au hover sur mon emoji afficher autour toutes mes missions
    VERSION MOBILE :  */
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 600px) {
     #buttonContainer, #mobileContainer {
         display: none;
     }

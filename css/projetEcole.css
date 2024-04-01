@@ -50,13 +50,13 @@
     }
 }
 
-@media only screen and (min-width: 768px) {
-    /*body {
+/*@media only screen and (min-width: 768px) {
+  body {
         background: #000;
-    }*/
-}
+    
+}}*/
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 600px) {
     h1 {
         text-align: center;
         margin-top: 40px;

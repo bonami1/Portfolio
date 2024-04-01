@@ -303,7 +303,7 @@ td, th {
 }
 .mainContent {
     width: 700px;
-    height: 400px;
+    height: 500px;
     padding: 20px;
     background: rgb(226, 167, 223);
 }
@@ -341,7 +341,6 @@ td, th {
     width: 700px;
     height: 400px;
     overflow-y: scroll;
-    scrollbar-color: rebeccapurple green;
     scrollbar-width: thin;
 }
 .code {
