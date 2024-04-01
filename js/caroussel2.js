@@ -5,11 +5,16 @@ const heading = document.querySelector('.caption h3');
 const description = document.querySelector('.caption p');
 
 const images = [
-    "01_Seyssins.png",
-    "02_Seyssins_adresse_IP.png",
-    "03_Seyssins_monitoring_Stadline.png",
-    "04_Seyssins_en_attente_utilisateur.png",
-    "05_Seyssins_fermeture_ticket.png"
+    "01.png",
+    "02.png",
+    "03.png",
+    "04.png",
+    "05.png",
+    "06.png",
+    "07.png",
+    "08.png",
+    "09.png",
+    "10.png"
 ];
 
 const headings = [
@@ -17,7 +22,12 @@ const headings = [
     "Checking if the resabox is on the network",
     "Checking the monitoring on Stadline admin website",
     "Waiting for user's response",
-    "Ticket closer"
+    "Ticket closer",
+    "title 6",
+    "title 7",
+    "title 8",
+    "title 9",
+    "title 10"
 ];
 
 const descriptions = [
@@ -25,12 +35,17 @@ const descriptions = [
     "Wih the command : Ping 192.168.17.240 => can't find",
     "The resabox is OFFLINE",
     "Asking for the user to follow the instruction on Stadline procedure which is : reboot the resabox et checking if the wiring is done correctly",
-    "No response from the user but the router is on the nextwork so we can close the ticket"
+    "No response from the user but the router is on the nextwork so we can close the ticket",
+    "descr 6",
+    "descr 7",
+    "descr 8",
+    "descr 9",
+    "descr 10",
 ];
 
 let id = 0;
 function slide(id) {
-    slider.style.backgroundImage = `url(http://127.0.0.1:5501/ticket/${images[id]})`;
+    slider.style.backgroundImage = `url(http://127.0.0.1:5501/img/ticketHub/${images[id]})`;
     slider.classList.add('imageFade');
     setTimeout(() => {
         slider.classList.remove('imageFade');

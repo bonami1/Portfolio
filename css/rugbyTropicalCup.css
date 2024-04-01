@@ -113,7 +113,6 @@ th, td {
     height: 500px;
     margin-top: 30px;
     overflow-y: scroll;
-    scrollbar-color: rebeccapurple green;
     scrollbar-width: thin;
 }
 .code {
@@ -198,5 +197,18 @@ footer {
     @keyframes imgFade {
         0% {opacity: 0;}     
         100% {opacity: 1;}   
+    }
+
+    .pcontainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #preview {
+        width: 700px;
+        height: 400px;
+        margin-top: 30px;
+        overflow: scroll;
+            scrollbar-width: thin;
     }
 }

@@ -9,6 +9,9 @@
 }
 
 @media only screen and (min-width: 1200px) {
+    body {
+        font-size: 1.1rem;
+    }
     h1 {
     text-align: center;
     }
@@ -20,10 +23,13 @@
         height: 50%;
         text-align: center;
     }
-    #skillContainer, #improvementContainer, #futurContainet, #jobContainer, #resultContainer {
+    #skillContainer, #improvementContainer, #futurContainet {
         width: 20%;
-        height: 10%;
+        height: 90%;
         margin: 5px;
+        border: 2px solid black;
+        border-radius: 10%;
+        text-align: center;
     }
     /*#competences, #amelioration , #projetPro {
         border: 2px solid black;
@@ -34,6 +40,14 @@
         font-size: 110%;
         text-align: center;
     }*/
+    li {
+        list-style-type: none;
+        margin: 10px;
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+    }
 }
 
 
