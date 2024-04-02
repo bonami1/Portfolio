@@ -35,6 +35,7 @@ function slide(id) {
     setTimeout(() => {
         slider.classList.remove('imageFade');
     }, 500);
+    //slider.innerHTML = `<img src="http://127.0.0.1:5501/ticket/02_Seyssins_adresse_IP.png" width="1800px" height="200px">`;
     heading.innerText = headings[id];
     description.innerText = descriptions[id];
 }
